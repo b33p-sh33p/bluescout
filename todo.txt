@@ -1,0 +1,2 @@
+[ ] automatically grab matchAmount from TBA data
+[ ] print match data on .md or .html file instead of .txt
