@@ -10,14 +10,17 @@ key = True
 
 # edit these variables as you like. they depend on what event you're at, what team you're in, etc.
 # comp - the event ID. it's shown in the event's URL on TBA.
-# matchAmount - the amount of matches you want to list.
 # us: in the file generated, there will be an asterisk by the matches this team is in.
 comp = '2023nvlv'
-matchAmount = 30
 us = 'frc6918'
 
+# variables to make stuff easier/abbreviated
+# don't edit these unless you know what you're doing
+event = tba.event(comp)
+matchAmount = len(tba.event_matches(comp))
+
 # variables to generate the txt file
-# these variables shouldn't be edited. you can mess with them if you want, but i don't recommend it
+# don't edit these unless you know what you're doing
 txt = open("%s_matches.txt" % (comp), "w")
 addtxt = open("%s_matches.txt" % (comp), "a")
 txt.write("Matches for %s\n\n" % (comp))
@@ -47,3 +50,5 @@ while matchNo < (matchAmount + 1):
     addtxt.write('Red: %s\n\n' % (red['team_keys']))
 
     matchNo += 1
+
+print("If you get an attribute error about there not being an attribute called 'alliances', it's fine. The script just won't list the playoff matches, and you probably don't need those.")
