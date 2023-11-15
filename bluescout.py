@@ -17,6 +17,7 @@ us = 'frc6918'
 # variables to make stuff easier/abbreviated
 # don't edit these unless you know what you're doing
 event = tba.event(comp)
+eventMatches = tba.event_matches(comp)
 matchAmount = len(tba.event_matches(comp))
 
 # variables to generate the txt file
@@ -27,8 +28,8 @@ txt.write("Matches for %s\n\n" % (comp))
 
 
 matchNo = 1
-while matchNo < (matchAmount + 1):
-    match = tba.match(year=2023,event=comp,number=matchNo)
+while matchNo < matchAmount:
+    match = eventMatches[matchNo]
     blue = match.alliances['blue']
     red = match.alliances['red']
 
@@ -50,5 +51,3 @@ while matchNo < (matchAmount + 1):
     addtxt.write('Red: %s\n\n' % (red['team_keys']))
 
     matchNo += 1
-
-print("If you get an attribute error about there not being an attribute called 'alliances', it's fine. The script just won't list the playoff matches, and you probably don't need those.")
