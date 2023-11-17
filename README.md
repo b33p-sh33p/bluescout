@@ -33,7 +33,7 @@ us = 'frc6918'
 python3 bluescout.py
 ```
 
-### to-do
+### todo
 :black_square_button: print data on md or html file instead of plain text
 
 :black_square_button: only list matches that the highlighted team is in. don't separate by match, but do sort by match (requested by teammate, will be in a separate version)
