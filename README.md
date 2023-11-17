@@ -5,6 +5,7 @@ bluescout generates a .txt file with a list of matches at an event, putting an a
 
 ### dependencies
 python (i recommend python 3.11. 3.12 may work, but i have not tested it)
+
 [Download Python](https://www.python.org/downloads/)
 
 tbapy
@@ -13,7 +14,6 @@ pip install tbapy
 ```
 
 ### how to run
-
 1. download bluescout.py
 2. open in your preferred text editor. nano, vscode, notepad, it does not matter as long as it works.
 3. change `key` in the `tba` variable to your TBA API key, which you can generate here: https://www.thebluealliance.com/account
@@ -32,3 +32,8 @@ us = 'frc6918'
 ```
 python3 bluescout.py
 ```
+
+### to-do
+:black_square_button: print data on md or html file instead of plain text
+
+:black_square_button: only list matches that the highlighted team is in. don't separate by match, but do sort by match (requested by teammate, will be in a separate version)
