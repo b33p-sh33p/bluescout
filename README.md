@@ -16,7 +16,7 @@ pip install tbapy
 
 1. download bluescout.py
 2. open in your preferred text editor.
-3. change 'key' in the tba variable to your TBA API key, which you can generate here: [https://www.thebluealliance.com/account]
+3. change 'key' in the tba variable to your TBA API key, which you can generate here: https://www.thebluealliance.com/account
 ```python
 tba = tbapy.TBA('key')
 ```
