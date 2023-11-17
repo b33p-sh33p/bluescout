@@ -10,7 +10,7 @@ key = True
 
 # edit these variables as you like. they depend on what event you're at, what team you're in, etc.
 # comp - the event ID. it's shown in the event's URL on TBA.
-# us: in the file generated, there will be an asterisk by the matches this team is in.
+# us: in the file generated, there will be an asterisk next to the matches this team is in.
 comp = '2023nvlv'
 us = 'frc6918'
 
