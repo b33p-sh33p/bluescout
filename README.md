@@ -8,7 +8,7 @@ python (i recommend python 3.11. 3.12 may work, but i have not tested it)
 
 [Download Python](https://www.python.org/downloads/)
 
-tbapy
+tbapy ([repo](https://github.com/frc1418/tbapy))
 ```
 pip install tbapy
 ```
