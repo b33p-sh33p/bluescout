@@ -1,2 +1,0 @@
-[ ] print match data on .md or .html file instead of .txt
-[ ] list only matches we are in and against. don't separate by match, but do sort by match
