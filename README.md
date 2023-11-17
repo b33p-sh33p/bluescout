@@ -15,16 +15,16 @@ pip install tbapy
 ### how to run
 
 1. download bluescout.py
-2. open in your preferred text editor.
-3. change 'key' in the tba variable to your TBA API key, which you can generate here: https://www.thebluealliance.com/account
+2. open in your preferred text editor. nano, vscode, notepad, it does not matter as long as it works.
+3. change `key` in the `tba` variable to your TBA API key, which you can generate here: https://www.thebluealliance.com/account
 ```python
 tba = tbapy.TBA('key')
 ```
-4. change the 'comp' variable to the identifier of the event you're scouting for. if you go the event's page on TBA, the identifier that you need should be in the URL.
+4. change the `comp` variable to the identifier of the event you're scouting for. if you go the event's page on TBA, the identifier that you need should be in the URL.
 ```python
 comp = '2023nvlv'
 ```
-5. change the 'us' variable to whatever team you're in. it should be in the format `frc0000`, where 0000 is your team number.
+5. change the `us` variable to whatever team you're in. it should be in the format `frc0000`, where 0000 is your team number.
 ```python
 us = 'frc6918'
 ```
