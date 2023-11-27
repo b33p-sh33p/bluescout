@@ -36,4 +36,6 @@ python3 bluescout.py
 ### todo
 :black_square_button: print data on md or html file instead of plain text
 
-:black_square_button: only list matches that the highlighted team is in. don't separate by match, but do sort by match (requested by teammate, will be in a separate version)
+:ballot_box_with_check: only list matches that the highlighted team is in.
+
+:black_square_button: don't separate by match, but do sort by match (requested by teammate, will be in a separate version)
