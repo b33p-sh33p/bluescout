@@ -1,6 +1,6 @@
 #!/bin/python3
 
-# scouting script made by connor b from team 6918 :)
+# scouting script made by connor from team 6918
 
 # set up tbapy module https://github.com/frc1418/tbapy
 # replace key with your TBA API key, which you can get at https://www.thebluealliance.com/account
