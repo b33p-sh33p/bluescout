@@ -24,30 +24,37 @@ matchAmount = len(tba.event_matches(comp))
 # don't edit these unless you know what you're doing
 txt = open("%s_matches.txt" % (comp), "w")
 addtxt = open("%s_matches.txt" % (comp), "a")
-txt.write("Matches for %s\n\n" % (comp))
-
+txt.write("Matches for %s with team " % (comp))
+addtxt.write("%s\n\n" % (us[3:]))
 
 matchNo = 1
 while matchNo < matchAmount:
     match = eventMatches[matchNo]
     blue = match.alliances['blue']
     red = match.alliances['red']
-
-    print('Match', match.match_number)
-    addtxt.write('Match %s\n' % (match.match_number))
-
+    bTeams = blue['team_keys']
+    rTeams = red['team_keys']
 
     if us in blue['team_keys']:
-        print("* ")
-        addtxt.write('* ')
-    print('Blue: ',blue['team_keys'])
-    addtxt.write('Blue: %s\n' % (blue['team_keys']))
+       print('Match', match.match_number)
+       addtxt.write('Match %s\n' % (match.match_number))
+
+       addtxt.write('With: ')
+       addtxt.write('%s, %s, %s\n' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
+
+       addtxt.write('Against: ')
+       addtxt.write('%s, %s, %s\n\n' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
+       print(' ')
 
     if us in red['team_keys']:
-        print("* ")
-        addtxt.write('* ')
+       print('Match', match.match_number)
+       addtxt.write('Match %s\n' % (match.match_number))
 
-    print('Red: ',red['team_keys'])
-    addtxt.write('Red: %s\n\n' % (red['team_keys']))
+       addtxt.write('With: ')
+       addtxt.write('%s, %s, %s\n' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
+       
+       addtxt.write('Against: ')
+       addtxt.write('%s, %s, %s\n\n' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
+       print('')
 
     matchNo += 1
