@@ -36,7 +36,6 @@ while matchNo < matchAmount:
     rTeams = red['team_keys']
 
     if us in blue['team_keys']:
-       print('Match', match.match_number)
        addtxt.write('Match %s\n' % (match.match_number))
 
        addtxt.write('With: ')
@@ -44,10 +43,8 @@ while matchNo < matchAmount:
 
        addtxt.write('Against: ')
        addtxt.write('%s, %s, %s\n\n' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
-       print(' ')
 
     if us in red['team_keys']:
-       print('Match', match.match_number)
        addtxt.write('Match %s\n' % (match.match_number))
 
        addtxt.write('With: ')
@@ -55,6 +52,6 @@ while matchNo < matchAmount:
        
        addtxt.write('Against: ')
        addtxt.write('%s, %s, %s\n\n' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
-       print('')
 
     matchNo += 1
+print('Done!')
