@@ -24,8 +24,7 @@ matchAmount = len(tba.event_matches(comp))
 # don't edit these unless you know what you're doing
 txt = open("%s_matches.txt" % (comp), "w")
 addtxt = open("%s_matches.txt" % (comp), "a")
-txt.write("Matches for %s with team " % (comp))
-addtxt.write("%s\n\n" % (us[3:]))
+txt.write("Matches for %s with team %s\n\n" % (comp, us[3:]))
 
 matchNo = 1
 while matchNo < matchAmount:
