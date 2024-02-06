@@ -3,16 +3,15 @@
 # scouting script made by connor from team 6918
 
 # set up tbapy module https://github.com/frc1418/tbapy
-# replace key with your TBA API key, which you can get at https://www.thebluealliance.com/account
 import tbapy
-tba = tbapy.TBA('key')
+tba = tbapy.TBA(input('enter your TBA API key. you can get this at https://www.thebluealliance.com/account\n\n'))
 key = True
 
 # edit these variables as you like. they depend on what event you're at, what team you're in, etc.
 # comp - the event ID. it's shown in the event's URL on TBA.
-# us: in the file generated, there will be an asterisk next to the matches this team is in.
-comp = '2023nvlv'
-us = 'frc6918'
+# us: the team that you want to focus on
+comp = input("what is the ID of event are you scouting for? you can find the ID in the event's URL on TBA.\n\nexample: the ID for the 2023 las vegas regional is 2023nvlv")
+us = 'frc' + input("what's your team number?\n\n")
 
 # variables to make stuff easier/abbreviated
 # don't edit these unless you know what you're doing
