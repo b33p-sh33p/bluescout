@@ -16,7 +16,7 @@ pip install tbapy
 ### Generating files
 1. Create a TBA API key at [https://www.thebluealliance.com/account]
 
-2. Download [bluescout-txt.py](./bluescout-txt.py) or [bluescout-html.py](./bluescout-html.py) (note: the script for genetating HTML files is not complete)
+2. Download [bluescout-txt.py](./bluescout-txt.py) or [bluescout-html.py](./bluescout-html.py)
 
 3. Run bluescout-txt.py or bluescout-html.py - It's recommended to run the script in a specific directory because it generates a new file for every event.
 
@@ -24,5 +24,7 @@ When you run the script, it'll ask you for the API key that you generated in ste
 
 ![Screenshot of the TBA page for the CA District East Bay Event of 2026, with a red circle around and an arrow pointing to the part of the URL with the event ID, which is 2026caetb.](./event-id-example.jpg "Example of an event ID")
 
-### Todo
-- Print data on .md or html file instead of plain text (html in progress)
+Once the file is generated it'll tell you where the file is located on your device, but that'll pretty much just be whatever directory you ran the script in.
+
+### Known issues
+- All playoff matches are labeled as just "Match 1". Not a huge priority because by playoffs you aren't really doing a lot of scouting lol
