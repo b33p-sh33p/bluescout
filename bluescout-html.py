@@ -23,7 +23,8 @@ matchAmount = len(tba.event_matches(comp))
 # don't edit these unless you know what you're doing
 txt = open("%s_matches.html" % (comp), "w")
 addtxt = open("%s_matches.html" % (comp), "a")
-txt.write("<h1>Matches for %s with team %s</h1>\n\n" % (comp, us[3:]))
+txt.write("<html>\n<body>\n")
+addtxt.write("<h1>Matches for %s with team %s</h1>\n\n" % (comp, us[3:]))
 
 matchNo = 1
 while matchNo < matchAmount:
@@ -34,22 +35,24 @@ while matchNo < matchAmount:
     rTeams = red['team_keys']
 
     if us in blue['team_keys']:
-       addtxt.write('<h2>Match %s</h2>' % (match.match_number))
+       addtxt.write('<h2>Match %s</h2>\n' % (match.match_number))
 
-       addtxt.write('With: ')
-       addtxt.write('%s, %s, %s<br>' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
+       addtxt.write('<p style="color:blue"><strong>With:</strong> ')
+       addtxt.write('%s, %s, %s</p>\n' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
 
-       addtxt.write('Against: ')
-       addtxt.write('%s, %s, %s<br>' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
+       addtxt.write('<p style="color:red"><strong>Against:</strong> ')
+       addtxt.write('%s, %s, %s</p>\n' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
 
     if us in red['team_keys']:
-       addtxt.write('<h2>Match %s</h2>' % (match.match_number))
+       addtxt.write('<h2>Match %s</h2>\n' % (match.match_number))
 
-       addtxt.write('With: ')
-       addtxt.write('%s, %s, %s<br>' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
+       addtxt.write('<p style="color:red"><strong>With:</strong> ')
+       addtxt.write('%s, %s, %s</p>\n' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
 
-       addtxt.write('Against: ')
-       addtxt.write('%s, %s, %s<br>' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
+       addtxt.write('<p style="color:blue"><strong>Against:</strong> ')
+       addtxt.write('%s, %s, %s</p>\n' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
 
     matchNo += 1
+
+addtxt.write("</body>\n</html>")
 print('Done!')
