@@ -4,14 +4,14 @@
 
 # set up tbapy module https://github.com/frc1418/tbapy
 import tbapy
-tba = tbapy.TBA(input('enter your TBA API key. you can get this at https://www.thebluealliance.com/account\n\n'))
+tba = tbapy.TBA(input('Enter your TBA API key. You can get this at https://www.thebluealliance.com/account\n\n'))
 key = True
 
 # edit these variables as you like. they depend on what event you're at, what team you're in, etc.
 # comp - the event ID. it's shown in the event's URL on TBA.
 # us: the team that you want to focus on
-comp = input("what is the ID of event are you scouting for? you can find the ID in the event's URL on TBA.\n\nexample: the ID for the 2023 las vegas regional is 2023nvlv")
-us = 'frc' + input("what's your team number?\n\n")
+comp = input("\nWhat is the ID of event are you scouting for? You can find the ID in the event's URL on TBA.\n\nExample: the ID for the 2023 Las Vegas Regional is 2023nvlv\n\n")
+us = 'frc' + input("What is your team number?\n\n")
 
 # variables to make stuff easier/abbreviated
 # don't edit these unless you know what you're doing
@@ -47,7 +47,7 @@ while matchNo < matchAmount:
 
        addtxt.write('With: ')
        addtxt.write('%s, %s, %s\n' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
-       
+
        addtxt.write('Against: ')
        addtxt.write('%s, %s, %s\n\n' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
 
