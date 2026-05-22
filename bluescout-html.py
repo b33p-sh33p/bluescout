@@ -23,7 +23,7 @@ matchAmount = len(tba.event_matches(comp))
 # don't edit these unless you know what you're doing
 txt = open("%s_matches.html" % (comp), "w")
 addtxt = open("%s_matches.html" % (comp), "a")
-txt.write("<html>\n<body>\n")
+txt.write('<html>\n<body style="font-family: Arial, Helvetica, sans-serif">\n')
 addtxt.write("<h1>Matches for %s with team %s</h1>\n\n" % (comp, us[3:]))
 
 matchNo = 1
