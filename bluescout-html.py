@@ -1,9 +1,10 @@
 #!/bin/python3
 
 # scouting script made by connor from team 6918
+import os
+import tbapy
 
 # set up tbapy module https://github.com/frc1418/tbapy
-import tbapy
 tba = tbapy.TBA(input('Enter your TBA API key. You can get this at https://www.thebluealliance.com/account\n\n'))
 key = True
 
@@ -55,4 +56,10 @@ while matchNo < matchAmount:
     matchNo += 1
 
 addtxt.write("</body>\n</html>")
+txt.close()
+
+# print location of the generated file
 print('Done!')
+filename = "%s_matches.html" % (comp)
+filepath = os.path.abspath(filename)
+print(os.path.dirname("You can find the generated file at:\n%s/%s" % (filepath,filename)))
