@@ -34,22 +34,22 @@ while matchNo < matchAmount:
     rTeams = red['team_keys']
 
     if us in blue['team_keys']:
-       addtxt.write('Match %s\n' % (match.match_number))
+       addtxt.write('<h2>Match %s</h2>' % (match.match_number))
 
        addtxt.write('With: ')
-       addtxt.write('%s, %s, %s\n' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
+       addtxt.write('%s, %s, %s<br>' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
 
        addtxt.write('Against: ')
-       addtxt.write('%s, %s, %s\n\n' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
+       addtxt.write('%s, %s, %s<br>' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
 
     if us in red['team_keys']:
-       addtxt.write('Match %s\n' % (match.match_number))
+       addtxt.write('<h2>Match %s</h2>' % (match.match_number))
 
        addtxt.write('With: ')
-       addtxt.write('%s, %s, %s\n' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
+       addtxt.write('%s, %s, %s<br>' % (str(rTeams[0])[3:], str(rTeams[1])[3:], str(rTeams[2])[3:]))
 
        addtxt.write('Against: ')
-       addtxt.write('%s, %s, %s\n\n' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
+       addtxt.write('%s, %s, %s<br>' % (str(bTeams[0])[3:], str(bTeams[1])[3:], str(bTeams[2])[3:]))
 
     matchNo += 1
 print('Done!')
