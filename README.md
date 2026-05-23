@@ -26,5 +26,6 @@ When you run the script, it'll ask you for the API key that you generated in ste
 
 Once the file is generated it'll tell you where the file is located on your device, but that'll pretty much just be whatever directory you ran the script in.
 
-### Known issues
-- All playoff matches are labeled as just "Match 1". Not a huge priority because by playoffs you aren't really doing a lot of scouting lol
+### Todo
+- Give the option to save the API key/event ID/team name to a file so that it doesn't have to be re-entered every time the script is run (to allow for periodically re-running the script in the background to refresh the file)
+- Fix labeling for playoff matches - all playoff matches are labeled as just "Match 1". Not a huge priority because by playoffs you aren't really doing a lot of scouting lol
