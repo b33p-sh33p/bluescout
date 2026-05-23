@@ -14,7 +14,7 @@ pip install tbapy
 ```
 
 ### Generating files
-1. Create a TBA API key at [https://www.thebluealliance.com/account]
+1. Create a TBA API key at https://www.thebluealliance.com/account
 
 2. Download [bluescout-txt.py](./bluescout-txt.py) or [bluescout-html.py](./bluescout-html.py)
 
